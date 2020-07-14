@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BookDoc :: Register </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <script src="bookDocvalidation.js"></script>
+    </head>
+
+    <body id="login-bod">
+
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav-lists">
+                        <li class="nav-item nav-item-hidden">
+                            <a href="index.html" class="nav-link nav-link-bookdoc"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="AboutUs.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="searchpage.HTML" class="nav-link">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="faq.html" class="nav-link">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="wrapper-log">
+            <div class="headerlog">
+                <h1 class ="headerlog-title"> BookDoc Official Website</h1>
+            </div>
+
+            <div class="main-log">
+
+                <h2 class="main-log-header">Register As a Patient Today!</h2>
+                <form action="registerpage.php" method="POST" class="form-reg">
+
+                    <label class="log-label"> Email*: </label>
+                    <input id="input-reg" type="email" size="50" maxlength="50" required>
+
+                    <br><br>
+
+                    <label class="log-label"> Password*: </label>
+                    <input class="input-reg" type="password" size="30" maxlength="20" placeholder="Must be at least 6 characters" id="pass-reg" required>
+
+                   <br><br>
+
+                    <label class="log-label"> First Name*: </label>  
+                    <input class="input-reg" type ="text" size="10" maxlength="30" id="reg-FName" onblur="validateFName()" required>
+                    <span id="FNamePrompt"></span>
+                    
+                    <br><br>
+
+                    <label class="log-label"> Last Name*: </label>
+                    <input class="input-reg" type ="text" size="15" maxlength="30" id="reg-LName" required>
+
+                    <br><br>
+
+                    <label class="log-label"> Date of Birth*: </label>
+                    <input class="input-reg" type="date" id="reg-date" required>
+
+                    &nbsp;
+
+                    <label class="gender-label"> Gender: </label>
+                    <input class ="x-gender" type="radio" name="gender" value="male"> Male
+                    <input class= "x-gender" type="radio" name="gender" value="female" > Female
+                    <input class="x-gender" type="radio" name="gender" value="other"> Other
+                    <br><br><br>
+
+                    <label class="log-label"> Contact No*: </label>
+                    <input class="input-reg" type="tel" size="18" id="reg-ContactNo" required>
+
+                    <br><br><br><hr><br>
+
+                    <input id="reg-terms" type="checkbox" name="checkbox" value="check"/> I have read and agree to the Terms of Use and Privacy Policy <br> of BookDoc 
+
+                    <br><br><br>
+
+                    <button class="login-button" type ="Submit" > Continue </button> &nbsp;&nbsp;&nbsp;
+                    <button class="login-button" type="reset"> Reset </button>
+
+                    <br><br><br>
+                    
+                </form>
+  
+            </div>
+        </div>
+
+        <br>
+        <hr class="hr-footer">
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <a href="index.html" class="nav-link nav-link-bookdoc"></a>
+                    <div>
+                        <a class="contact-phone" href="tel:1300-88-2362">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1300~88~2362</a>
+                        <a class="contact-email" href="mailto:care@bookdoc.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;care@bookdoc.com</a>
+                    </div>
+                    <div>
+                        <a class="fb" href="https://www.facebook.com/BookDoc4u">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook</a>
+                        <a class="insta" href="https://www.instagram.com/bookdoc4u/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram</a>
+                        <a class="twitter" href="https://twitter.com/bookdoc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twitter</a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/bookdoc-910261102/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <br>
+                        <a href="AboutUs.html" class="footer-links">About Us</a>
+                        <a href="searchpage.html" class="footer-links">Search</a>
+                        <a href="services.html" class="footer-links">Services</a>
+                        <a href="Rewards.html" class="footer-links">Bookdoc Activ</a>
+                        <a href="faq.html" class="footer-links">FAQ</a>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact Us !</h2>
+                    <form action="index.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="Your email address..." id="SearchAddress" onblur="validateAddress()">
+                        <span id="SearchAddressPrompt"></span>
+                        <br><br>
+                        <textarea name="message" class="text-input contact-input" placeholder="Your message..." rows="10" cols="50"></textarea>
+                        <br>
+                        <button type="submit" class="btn btn-big">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; bookdoc.com | Designed by Kenji,Muhammad,Liyana&Shafiq.
+            </div>
+        </footer>
+
+    </body>
+        
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BookDoc :: Homepage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet"> 
+        <script src="bookDocvalidation.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav-lists">
+                        <li class="nav-item nav-item-hidden">
+                            <a href="homepage.html" class="nav-link nav-link-bookdoc"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="homepage.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="AboutUs.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="searchpage.HTML" class="nav-link">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="faq.html" class="nav-link">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section class=" base about-us">
+            <div class="container">
+                <div class="title">
+                    <h2 class="title-heading">About Us</h2>
+                    <h3 class="title-sub-heading">The best online platform for connecting patients to healthcare professionals</h3>
+                </div>
+                <div class="cta">
+                    <a href="AboutUs.html" class="cta-link cta-link-darker">Learn more ></a>
+                </div>
+            </div>
+        </section>
+        <section class=" base search">
+                <div class="container">
+                    <div class="title">
+                        <h2 class="title-heading"> Search & Book </h2>
+                        <h3 class="title-sub-heading"> Hassle-free integrated online eco-system for finding and booking healtcare professionals</h3>
+                        <p class="desc">Come & book an appointment today !</p>
+                    </div>
+                    <div class="cta">
+                        <a href="searchpage.HTML" class="cta-link">Learn more ></a>
+                    </div>
+                </div>
+        </section>
+        <section class=" base service">
+            <div class="container">
+                <div class="title">
+                    <h2 class="title-heading">Services</h2>
+                    <h3 class="title-sub-heading"> Many types of benefits available for each different categories</h3>
+
+                </div>
+                <div class="cta">
+                    <a href="services.html" class="cta-link">Learn more ></a>
+                </div>
+            </div>
+        </section>
+        <section class=" base bookdoc-activ">
+            <div class="container">
+                <div class="title">
+                    <h2 class="title-heading">BookDoc Activ</h2>
+                    <h3 class="title-sub-heading"> Get Rewarded for Staying Activ !</h3>
+                </div>
+                <div class="cta">
+                    <a href="Rewards.html" class="cta-link">Learn more ></a>
+                </div>
+            </div>
+        </section>
+        <section class=" base FAQ">
+            <div class="container">
+                <div class="title">
+                    <h2 class="title-heading"> Frequently Asked Questions </h2>
+                    <h3 class="title-sub-heading">Are you curious & you might have some questions?</h3>
+                </div>
+                <div class="cta">
+                    <a href="faq.html" class="cta-link">Learn more ></a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <a href="homepage.html" class="nav-link nav-link-bookdoc"></a>
+                    <div>
+                        <a class="contact-phone" href="tel:1300-88-2362">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1300~88~2362</a>
+                        <a class="contact-email" href="mailto:care@bookdoc.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;care@bookdoc.com</a>
+                    </div>
+                    <div>
+                        <a class="fb" href="https://www.facebook.com/BookDoc4u">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook</a>
+                        <a class="insta" href="https://www.instagram.com/bookdoc4u/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram</a>
+                        <a class="twitter" href="https://twitter.com/bookdoc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twitter</a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/bookdoc-910261102/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <br>
+                        <a href="AboutUs.html" class="footer-links">About Us</a>
+                        <a href="searchpage.HTML" class="footer-links">Search</a>
+                        <a href="services.html" class="footer-links">Services</a>
+                        <a href="Rewards.html" class="footer-links">Bookdoc Activ</a>
+                        <a href="faq.html" class="footer-links">FAQ</a>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact Us !</h2>
+                    <form action="homepage.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="Your email address..." id="SearchAddress" onblur="validateAddress()">
+                        <span id="SearchAddressPrompt"></span>
+                        <br><br>
+                        <textarea name="message" class="text-input contact-input" placeholder="Your message..." rows="10" cols="50"></textarea>
+                        <br>
+                        <button type="submit" class="btn btn-big">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; bookdoc.com | Designed by Kenji,Muhammad,Liyana&Shafiq.
+            </div>
+        </footer>
+    </body>
+</html>

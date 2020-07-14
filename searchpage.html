@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BookDoc :: Search </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <script src="bookDocvalidation.js"></script>
+    </head>
+    <body id="searchBody">
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav-lists">
+                        <li class="nav-item nav-item-hidden">
+                            <a href="index.html" class="nav-link nav-link-bookdoc"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="AboutUs.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="searchpage.HTML" class="nav-link">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="faq.html" class="nav-link">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="wrapper">
+            <div class="form">
+                <h1 class="header-form">Search and book</h1>
+                <p class="header-p"> "Hassle-free integrated online eco-system for finding and booking healthcare professionals" </p>
+
+                <form action="searchpage.php" method="POST" class="searchForm">
+                   
+                    <label for="medicine"> Select your area of medicine: </label>
+
+                    <select name="medicine">
+                        <option value="Cardiologist">Cardiologist</option>
+                        <option value="Neurologist">Neurologist</option>
+                        <option value="Orthopedic">Orthopedic</option>
+                        <option value="Chiropractor">Chiropractor</option>
+                        <option value="Dermatologist">Dermatologist</option>
+                        <option value="Physiotherapy">Physiotherapy</option>
+                        <option value="General medicine">General medicine</option>
+                        <option value="Paediatrician">Paediatrician</option>
+                    </select> 
+
+                    <br>
+                    <br>
+                    
+                    <label>Name: </label><input class="search-input" type="text" placeholder="Enter name here" id="SearchName" onblur="validateName()">
+                    <span id="SearchNamePrompt"></span>
+                    &nbsp;&nbsp;
+                    <label>Address: </label><input class="search-input" type="text" placeholder="Type your address here" id="SearchAddress" onblur="validateAddress()">
+                    <span id="SearchAddressPrompt"></span>
+                    &nbsp;&nbsp;
+                    <label>Date: </label><input class="search-input" type="date" id="date">
+                    <br>
+                    <input type="submit" id="submitBtn">
+                    
+                    <input type="reset" id="resetBtn">
+                </form>
+            </div>
+
+        </div>
+        
+            <br> <br>
+
+            <div class="memberLinks">
+                <a href="register.html">Create new account</a>
+                <br>
+                <a href="login.html">Login here</a>
+            </div> 
+
+            <script src="" async defer></script>
+            <br>
+        
+            <hr>
+            
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <a href="index.html" class="nav-link nav-link-bookdoc"></a>
+                    <div>
+                        <a class="contact-phone" href="tel:1300-88-2362">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1300~88~2362</a>
+                        <a class="contact-email" href="mailto:care@bookdoc.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;care@bookdoc.com</a>
+                    </div>
+                    <div>
+                        <a class="fb" href="https://www.facebook.com/BookDoc4u">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook</a>
+                        <a class="insta" href="https://www.instagram.com/bookdoc4u/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram</a>
+                        <a class="twitter" href="https://twitter.com/bookdoc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twitter</a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/bookdoc-910261102/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <br>
+                        <a href="AboutUs.html" class="footer-links">About Us</a>
+                        <a href="searchpage.HTML" class="footer-links">Search</a>
+                        <a href="services.html" class="footer-links">Services</a>
+                        <a href="Rewards.html" class="footer-links">Bookdoc Activ</a>
+                        <a href="faq.html" class="footer-links">FAQ</a>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact Us !</h2>
+                    <form action="index.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+                        <br><br>
+                        <textarea name="message" class="text-input contact-input" placeholder="Your message..." rows="10" cols="50"></textarea>
+                        <br>
+                        <button type="submit" class="btn btn-big">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; bookdoc.com | Designed by Kenji,Muhammad,Liyana&Shafiq.
+            </div>
+        </footer>
+    </body>
+</html>

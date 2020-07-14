@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BookDoc :: Login </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="bookDocvalidation.js"></script>
+    </head>
+    
+    <body id="login-bod">
+
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav-lists">
+                        <li class="nav-item nav-item-hidden">
+                            <a href="index.html" class="nav-link nav-link-bookdoc"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="AboutUs.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="searchpage.HTML" class="nav-link">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="faq.html" class="nav-link">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="wrapper-log">
+
+            <script class="login-alert">
+                
+                alert("Welcome back! Login to access your BookDoc account!");
+
+            </script>
+
+            
+            <div class="header-log">
+                 <h1 class ="headerlog-title"> BookDoc Official Website</h1> 
+            </div>
+            
+    
+
+            <div class="main-log">
+
+                <h2 class="main-log-header">PATIENT LOGIN</h2>
+                <form action="loginpage.php" method="POST" class="form-login">
+
+                    <br>
+
+                    <label class="log-label"> Email*: </label>
+                    <input class="log-input" type="email" size="20" maxlength="30" placeholder="Enter Email here" id="login-email" required>
+
+                    <br><br><br>
+
+                    <label class="log-label"> Password*: </label>
+                    <input class="log-input" type="password" size="20" maxlength="12" placeholder="Enter Password here" id="login-pw" required>
+
+                    <br><br>
+
+                    <button class="login-button" type ="Submit"> Login </button>
+
+                </form>
+
+                <br>
+
+                <a href="#" class="login-link"> Forgot Password? </a>
+                <br>
+                <br>
+                <hr>
+                
+
+                <h3 class="main-log-header"> INTERESTED IN BECOMING PART OF <br> OUR BOOKDOC FAMILY? </h3>
+                <p class="login-paragraph">Become a registered patient with BookDoc to discover more about BookDoc <br> and book an appointment through us the easy way!</p>
+                
+                <br>
+
+                <a href="register.html" class="login-link"> Sign up as patient </a> 
+
+                <br><br><br><br><br><br><br>
+                
+            </div>
+        </div>
+        
+        <br>
+        <hr class="hr-footer">
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <a href="index.html" class="nav-link nav-link-bookdoc"></a>
+                    <div>
+                        <a class="contact-phone" href="tel:1300-88-2362">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1300~88~2362</a>
+                        <a class="contact-email" href="mailto:care@bookdoc.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;care@bookdoc.com</a>
+                    </div>
+                    <div>
+                        <a class="fb" href="https://www.facebook.com/BookDoc4u">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook</a>
+                        <a class="insta" href="https://www.instagram.com/bookdoc4u/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram</a>
+                        <a class="twitter" href="https://twitter.com/bookdoc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twitter</a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/bookdoc-910261102/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <br>
+                        <a href="AboutUs.html" class="footer-links">About Us</a>
+                        <a href="searchpage.html" class="footer-links">Search</a>
+                        <a href="services.html" class="footer-links">Services</a>
+                        <a href="Rewards.html" class="footer-links">Bookdoc Activ</a>
+                        <a href="faq.html" class="footer-links">FAQ</a>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact Us !</h2>
+                    <form action="index.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="Your email address..." id="SearchAddress" onblur="validateAddress()">
+                        <span id="SearchAddressPrompt"></span>
+                        <br><br>
+                        <textarea name="message" class="text-input contact-input" placeholder="Your message..." rows="10" cols="50"></textarea>
+                        <br>
+                        <button type="submit" class="btn btn-big">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; bookdoc.com | Designed by Kenji,Muhammad,Liyana&Shafiq.
+            </div>
+        </footer>
+
+    </body>
+
+</html>

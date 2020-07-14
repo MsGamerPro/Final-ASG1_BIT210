@@ -1,0 +1,600 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size:10px;
+    font-family:'Poppins',sans-serif;
+}
+
+a{
+    display:block;
+    text-decoration:none;
+}
+
+.container{
+    max-width:98rem;
+    margin:0 auto;
+    padding:0 2.0rem;
+}
+
+header{
+    position:fixed;
+    top:0;
+    z-index:1400;
+    height:7.3rem;
+    width:100%;
+    background-color:#2471A3;
+}
+
+.nav-lists{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin:0 -1rem;
+}
+.nav-link{
+    font-size:1.4rem;
+    color:#F4D03F;
+    padding:0 3rem;
+    transition:opacity 0.5s;
+}
+
+.nav-link:hover{
+    opacity: 0.7;
+}
+
+.nav-link-bookdoc{
+    width:11.8rem;
+    height: 7rem;
+    background:url("bookdoc.png") center no-repeat;
+}
+
+.nav-link-search{
+    width:1.6rem;
+    height:4.4rem;
+    background:url();
+}
+
+.about-us{
+    height:69.2rem;
+    margin-top:4.4rem;
+    background:url("book_doc_bg1.jpg") center no-repeat;
+}
+
+.title{
+    color:#000;
+    text-align:center;
+    padding-top:5.5rem;
+}
+
+.title-heading{
+    font-size:5.6rem;
+    line-height:1.07143;
+    letter-spacing:-0.005rem;
+}
+
+.title-sub-heading{
+    font-size:2.65rem;
+    margin-top:0.6rem;
+    letter-spacing:0.008rem;
+    font-weight:400;
+}
+
+.desc{
+    font-size:1.7rem;
+    color:#888;
+    margin-top:0.68rem;
+}
+
+.cta{
+    text-align:center;
+    margin-top:1.3rem;
+}
+
+.cta-link{
+    color:#66bbff;
+    font-size: 2.1rem;
+    display:inline-block;
+}
+
+.cta-link:hover{
+    border-bottom: 2px solid #66bbff;
+}
+
+.base{
+    min-height:100%;
+    height:69.2rem;
+    background-size: auto 73.6rem;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-top:0.6rem solid #fff;
+    border-bottom:0.6rem solid #fff;
+}
+
+.search{
+    background:url("search_field_bg2.gif") no-repeat;
+    background-position:right;
+    background-size:cover;
+}
+
+.about-us{
+    border-top:none;
+}
+
+.service{
+    margin-top:4.4rem;
+    background:url("bookdoc_bg3.png") center no-repeat;
+}
+
+.bookdoc-activ{
+    background:url("bookdoc_activ.jpg") center no-repeat;
+    background-size:cover;
+}
+
+.FAQ{
+    background:url("bookdoc_faq.jpg") center no-repeat;
+    background-size:cover;
+    border-bottom:none;
+}
+
+/*footer*/
+.footer{
+    background-color:#2471A3;
+    color:#F4D03F;
+    height:300px;
+    position:relative;
+}
+
+.footer-content{
+    height:250px;
+    display:flex;
+}
+
+.footer-section{
+    flex:1;
+    padding:25px;
+}
+
+.footer-bottom{
+    background:#2471A3;
+    color:#F4D03F;
+    height:25px;
+    width:100%;
+    text-align:center;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+}
+.contact-phone{
+    background:url("phone-call.png") no-repeat left;
+    height:30px;
+    width:30px;
+    color:#F4D03F;
+    font-size:15px;
+}
+.contact-email{
+    background:url("email.png") no-repeat left;
+    height:30px;
+    width:30px;
+    color:#F4D03F;
+    font-size:15px;
+}
+.fb{
+    background:url("facebook.png") no-repeat left;
+    height:30px;
+    width:30px;
+    color:#F4D03F;
+    font-size:15px;
+}
+
+.insta{
+    background:url("instagram.png") no-repeat left;
+    height:30px;
+    width:30px;
+    color:#F4D03F;
+    font-size:15px;
+}
+
+.twitter{
+    background:url("twitter.png") no-repeat left;
+    height:30px;
+    width:30px;
+    color:#F4D03F;
+    font-size:15px;
+}
+
+.linkedin{
+    background:url("linkedin.png") no-repeat left;
+    height:30px;
+    width:30px;
+    color:#F4D03F;
+    font-size:15px;
+}
+.footer-links{
+    height:30px;
+    width:auto;
+    color:#F4D03F;
+    font-size:15px;
+}
+
+button{
+    position:relative;
+    width:377px;
+}
+
+/*Search page*/ 
+
+#searchBody{background-color: #2471A3;}
+
+.search-header{
+    position:fixed;
+    top:0;
+    z-index:1400;
+    height:7.0rem;
+    width:100%;
+    background-color:#2471A3;
+}
+
+.form{
+    max-width: 600px;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right:auto;
+    border: solid 5px black;
+    background-color: #94f2e3;
+    padding-top: 2rem;
+    }   
+
+.header-form{text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            padding:10px;}
+
+.header-p{text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;}
+
+label{
+        display: block;
+        color: black;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+.search-input {
+        display: block;
+        width: 60%;
+    }
+    
+#submitBtn{
+        border: 0;
+        background-color: orangered;
+        padding: 0.4rem;
+        color: white;
+        margin: 1rem 0;
+        width: auto;
+    }
+    
+#resetBtn{
+        border: 0;
+        background-color: orangered;
+        padding: 0.4rem;
+        color: white;
+        margin: 0.5rem 0;
+        width: auto;
+    }   
+    
+.memberLinks{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    text-decoration:underline;
+} 
+
+/*About Us page*/
+
+#abt-bod{
+    background-color: #94f2e3;
+}
+
+.aboutusMain{
+    text-align: center;
+    padding-top: 10rem;
+
+}
+
+.aboutusMain h2{
+    color: #f74040;
+}
+
+.vision{
+    height: 200px;
+    width: 250px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.visionAndMission p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.visionAndMission h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: #f74040;
+}
+
+
+.OurStory h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ad0911;
+    font-size: xx-large;
+}
+
+.OurStory p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+
+.aboutusMain h1{
+    font-family:'Times New Roman', Times, serif;
+    color: #ad0911;
+    font-size: xx-large;
+}
+
+.aboutusMain p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+/*login page*/
+#login-bod {background-color: #2471A3;}
+
+.headerlog-title{text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        font-family:'Poppins',sans-serif  ;
+        background-color: rgb(228, 55, 55);
+        padding: 5px;
+        border-radius: 10px 10px 0px 0px;}
+
+#wrapper-log{width: 45%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 75px;
+        background-color: white;
+        min-width: 500px;
+        max-width: 850px;
+        border-radius: 10px;
+        box-shadow: 3px 4px 1px rgb(163, 162, 162);
+        text-align: center;}
+
+.main-log-header{font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.1rem;
+        font-size: 24px;
+        padding: 20px;}
+
+.form-login{text-align: center;}
+
+.log-label{font-weight: bold;
+        color: black;
+        font-size: 14px;
+        display: inline;}
+
+.log-input {width: 230px;
+            display: inline-block;}
+
+.login-button {height: 25px;
+                width: 100px;}
+
+.login-paragraph{font-family: 'Poppins', sans-serif;
+                font-size: 1.3em;
+                padding: 10px;}
+
+.login-link{font-family:'Poppins',sans-serif;
+                font-weight: bold;
+                font-size: 14px;
+                color: #030361;
+                text-decoration: underline;}
+
+.hr-footer{border: 1.0px solid white;}
+
+/*Register page*/
+
+.input-reg{width: 200px;
+            height: 20px;
+            display: inline-block;}
+
+.gender-label{color: black;
+                font-weight: bold;
+                font-size: 14px;
+                padding-top:15px;
+                padding-bottom: 10px;}
+
+.x-gender{margin: auto;}
+
+#reg-terms{margin: auto;
+    padding:30px;}
+
+/*FAQ page*/
+
+#wrapper-faq{width:83%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 4px 1px rgb(163, 162, 162);}
+
+.main-faq-header{text-align: center;
+            font-family:'Poppins',sans-serif;
+            font-size: 30px;}
+
+#logo-faq{width: 300px;
+    height:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;}
+
+#faq-questions span {font-weight: bold;
+            font-size: 15px;
+            font-family:'Poppins', sans-serif;}
+    
+.faq-paragraph{font-family: 'Poppins', sans-serif;
+            font-size: 12px;}
+
+.faq-border1{width: 420px;
+    height: 180px;
+    margin: 25px 50px 50px 75px;
+    background-color: rgb(241, 238, 238);
+    border: 3px none rgb(20, 19, 19) ;
+    padding: 5px;
+    display: inline-block;}
+
+.faq-border2{width: 450px;
+    height: 180px;
+    margin: 25px 50px 35px 40px;
+    background-color: rgb(241, 238, 238);
+    border: 3px none rgb(20, 19, 19) ;
+    padding: 5px;
+    float: right;}
+
+.faq-border3{width: 420px;
+    height: 250px;
+    margin: 25px 50px 40px 75px;
+    background-color: rgb(241, 238, 238);
+    border: 3px none rgb(20, 19, 19) ;
+    padding: 5px;
+    display: inline-block;}
+
+.faq-border4{width: 450px;
+    height: 220px;
+    margin: 25px 50px 35px 40px;
+    background-color: rgb(241, 238, 238);
+    border: 3px none rgb(20, 19, 19) ;
+    padding: 5px;
+    float: right;
+    color: black;}
+
+.faq-border5{width: 420px;
+    height: 220px;
+    margin: 30px 50px 50px 75px;
+    background-color: rgb(241, 238, 238);
+    border: 3px none rgb(20, 19, 19) ;
+    padding: 5px;
+    display: inline-block;}
+
+.faq-border6{width: 450px;
+    height: 215px;
+    margin: 30px 50px 35px 40px;
+    background-color: rgb(241, 238, 238);
+    border: 3px none rgb(20, 19, 19) ;
+    padding: 5px;
+    float: right;}
+
+.ul-faq{list-style: none;
+        text-align: center;}
+
+.list-faq{color: black;
+    font-family:'Poppins', sans-serif;
+    font-size: 12px;}
+
+.faq-enquiry{font-family:'Poppins', sans-serif;
+            font-size: 14px;
+            text-align: center;}
+
+/*Rewards and Services*/
+.column {
+    float: left;
+    width: 25%;
+    padding: 40px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .cfr{
+    float: top;
+    width: 75%;
+    padding: 20px;  
+  }
+
+  .cfrps{
+    float: top;
+    width: 28.5%;
+    padding: 20px;  
+  }
+ .cfrps:hover{
+    opacity: 0.7;
+}
+  .cfras{
+    float: top;
+    width: 25%;
+    padding: 20px;  
+  }
+  
+  .cfras:hover{
+    opacity: 0.7;
+}
+  
+  .mor{
+    color:#f266ff;
+    font-size: 1rem;
+    display:inline-block;
+  }
+
+  .inf{
+    text-align:center;
+    font-size:1.7rem;
+    color:#888;
+    margin-top:0.68rem;
+  }
+
+  .sch{
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+  }
+
+  #list-services li a:hover {
+    background-color: #eee;
+  }
+
+#list-services{list-style: none;}

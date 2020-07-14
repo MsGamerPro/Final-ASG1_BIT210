@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BookDoc :: Services</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet"> 
+        <script src="bookDocvalidation.js"></script>
+    </head>
+
+   
+
+    <body>
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav-lists">
+                        <li class="nav-item nav-item-hidden">
+                            <a href="index.html" class="nav-link nav-link-bookdoc"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="AboutUs.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="searchpage.html" class="nav-link">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="services.html" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="faq.html" class="nav-link">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <a href="#">HTML</a>
+        
+        <section class="container">
+                    <div class="title">
+                        <h2 class="title-heading"> &nbsp;<br> Services/Procedures </h2>
+                        <div class="sch">
+                            <input type="text" id="Search" onkeyup="myFunction()" placeholder="Search..">
+                        <ul id="list-services">
+                            <li><a href="#">24 Hours Clinic</a></li>
+                            <li><a href="#"> 3D Imaging</a></li>
+                            <li><a href="#">3D Laser Scanne</a></li>
+                            <li><a href="#">Acne And Acne Scarring Solutions</a></li>
+                            <li><a href="#">Acne Scar Removal</a></li>
+                            <li><a href="#">Acne Treatment</a></li>
+                            <li><a href="#">Acupuncture</a></li>
+                            <li><a href="#">Acute & Chronic Lymphocytic Leukemia</a></li>
+                            <li><a href="#">Acute & Chronic Lymphocytic Leukemia</a></li>
+                            <li><a href="#">Acute & Chronic Myeloid LeukemiaArthritis</a></li>
+                            <li><a href="#">Arthroplasty</a></li>
+                            <li><a href="#">Arthroscopy</a></li>
+                            <li><a href="#">Autism Spectrum Disorder (ASD)</a></li>
+                            <li><a href="#">Ayurveda Medicine</a></li>
+                            <li><a href="#">Back Care</a></li>
+                            <li><a href="#">Back Pain</a></li>
+                            <li><a href="#">Bad Breath Treatment</a></li>
+                            <li><a href="#">Basic Nursing Care (e.g. Elderly/Post Stroke)</a></li>
+                            <li><a href="#">Basic Nursing Care (e.g. Feeding/Bathing)</a></li>
+                            <li><a href="#">Basic Renal Ultrasound</a></li>
+                            <li><a href="#">Bio Surgery</a></li>
+                            <li><a href="#">Biopsy</a></li>
+                            <li><a href="#">Blood Glucose Rapid Test</a></li>
+                            <li><a href="#">Blood Pressure Check</a></li>
+                            <li><a href="#">Blood Pressure Treatment</a></li>
+                            <li><a href="#">Body Composition Analysis (BCA)</a></li>
+                            <li><a href="#">Bone Cancer Surgery</a></li>
+                            <li><a href="#">Bone Density Test</a></li>
+                            <li><a href="#">Bone Fracture Surgery</a></li>
+                            <li><a href="#">Botox</a></li>            
+                            <li><a href="#">Braces </a></li>                               
+                            <li><a href="#">Brain And Spine Tumor</a></li>
+                            <li><a href="#">Burns</a></li>
+                            <li><a href="#">Calcium Disorder</a></li>
+                            <li><a href="#">Cancer & Chemotheraphy Related Pain</a></li>
+                            <li><a href="#">Cancer Nutrition</a></li>
+                            <li><a href="#">Cancer Rehabilitation Centre</a></li>
+                            <li><a href="#">Cancer Screening Test</a></li>
+                            <li><a href="#">Cancer Treatment</a></li>
+                            <li><a href="#">Cardiac/Heart Screening</a></li>
+                            <li><a href="#">Cardiac/Heart Surgery</a></li>
+                            <li><a href="#">Chemotherapy</a></li>
+                            <li><a href="#">Children's Dentistry</a></li>
+                            <li><a href="#">Consultation</a></li>
+                            <li><a href="#">Contact Lens Related Disease</a></li>
+                            <li><a href="#">CT Scan</a></li>
+                        
+
+                          </ul>
+                        </div>
+                    
+                    
+                 
+                </div>
+        </section>
+        
+        
+
+        <script>
+            function myFunction() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("Search");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("list-services");
+              li = ul.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+            </script>
+        
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <a href="index.html" class="nav-link nav-link-bookdoc"></a>
+                    <div>
+                        <a class="contact-phone" href="tel:1300-88-2362">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1300~88~2362</a>
+                        <a class="contact-email" href="mailto:care@bookdoc.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;care@bookdoc.com</a>
+                    </div>
+                    <div>
+                        <a class="fb" href="https://www.facebook.com/BookDoc4u">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook</a>
+                        <a class="insta" href="https://www.instagram.com/bookdoc4u/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instagram</a>
+                        <a class="twitter" href="https://twitter.com/bookdoc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twitter</a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/bookdoc-910261102/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <br>
+                        <a href="AboutUs.html" class="footer-links">About Us</a>
+                        <a href="searchpage.html" class="footer-links">Search</a>
+                        <a href="services.html" class="footer-links">Services</a>
+                        <a href="Rewards.html" class="footer-links">Bookdoc Activ</a>
+                        <a href="faq.html" class="footer-links">FAQ</a>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact Us !</h2>
+                    <form action="index.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input" placeholder="Your email address..." id="SearchAddress" onblur="validateAddress()">
+                        <span id="SearchAddressPrompt"></span>
+                        <br><br>
+                        <textarea name="message" class="text-input contact-input" placeholder="Your message..." rows="10" cols="50"></textarea>
+                        <br>
+                        <button type="submit" class="btn btn-big">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; bookdoc.com | Designed by Kenji,Muhammad,Liyana&Shafiq.
+            </div>
+        </footer>
+    </body>
+</html>
